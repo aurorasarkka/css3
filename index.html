@@ -1,0 +1,49 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 30vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <header>How to use flexbox</header>
+  <div id="main">
+    <article>When working with flexbox you need to think in terms of two axes,the main axis and the cross axis. The main axis is defined by the flex-direction property, and the cross axis runs perpendicular to it. Everything we do with flexbox refers back to these axis.</article>
+    <nav>When using flexbox it takes certain area to use and shares remaining space between others. If you change flexbox size, it also affects to other boxes.</nav>
+    <aside>This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.</aside>
+  </div>
+  <footer>A key feature of flexbox is the ability to align and justify items on the main- and cross-axes, and to distribute space between flex items. Note that these properties are to be set on the flex container, not on the items themselves. There is many properties, example. flex-start, flex-end, center, space-around, space-between </footer>
+</body>
